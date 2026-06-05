@@ -91,31 +91,29 @@ export const services = [
   },
 ] as const;
 
+export const exampleFocusIntro =
+  "Examples of operational areas where a Focus can create measurable impact — not a client list, but the kinds of problems I help solve.";
+
 export const engagements = [
   {
     title: "Healthcare Intake",
     description:
-      "Focused on automating patient intake and data collection workflows.",
+      "Manual intake slows staff down and introduces errors. Automate patient data collection from first contact.",
   },
   {
     title: "Insurance Eligibility",
     description:
-      "Focused on streamlining eligibility checks across payer systems.",
+      "Eligibility checks across multiple payers waste hours every week. Streamline verification into one reliable workflow.",
   },
   {
     title: "CRM & Communication",
     description:
-      "Focused on AI-assisted client communication and follow-up.",
+      "Follow-ups fall through when communication is manual. Build AI-assisted outreach that stays on track.",
   },
   {
     title: "Operational Systems",
     description:
-      "Focused on end-to-end platforms built around AI capabilities.",
-  },
-  {
-    title: "Process Design",
-    description:
-      "Focused on redesigning core business processes for scale.",
+      "Critical work lives across too many disconnected tools. Connect operations into systems your team actually uses.",
   },
 ] as const;
 
