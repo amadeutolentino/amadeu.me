@@ -1,26 +1,184 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --bronze: #c59b6d;
+  --bronze-light: #d4b08a;
+  --charcoal: #141414;
+  --muted: #a3a3a3;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bronze: var(--bronze);
+  --color-bronze-light: var(--bronze-light);
+  --color-charcoal: var(--charcoal);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Section labels — bronze, wide-tracked caps */
+.label-section {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--bronze);
+}
+
+@media (min-width: 768px) {
+  .label-section {
+    font-size: 0.75rem;
+  }
+}
+
+/* Body copy */
+.text-body {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+@media (min-width: 768px) {
+  .text-body {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
+
+/* Large display — light weight (footer CTA) */
+.text-display-light {
+  font-size: clamp(1.875rem, 6vw, 3.5rem);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* Statement block — goal section */
+.text-display-statement {
+  font-size: clamp(1.5rem, 5vw, 2.75rem);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* Card / list titles */
+.text-card-title {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .text-card-title {
+    font-size: 0.875rem;
+    letter-spacing: 0.2em;
+  }
+}
+
+/* Stats */
+.text-stat-value {
+  font-size: 1.875rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .text-stat-value {
+    font-size: 2.25rem;
+  }
+}
+
+.text-stat-label {
+  font-size: 0.625rem;
+  line-height: 1.4;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Hero metallic gradient */
+.text-gradient-headline {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #ececec 22%,
+    #a3a3a3 68%,
+    #6b6b6b 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.headline-metallic {
+  filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.06))
+    drop-shadow(0 2px 12px rgba(0, 0, 0, 0.45));
+}
+
+/* Micro copy under CTAs */
+.text-micro {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+::selection {
+  background: rgba(197, 155, 109, 0.3);
+  color: #fff;
+}
+
+@keyframes section-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-reveal {
+  animation: section-reveal 0.7s ease both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 25%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-reveal {
+    animation: none;
+  }
 }
