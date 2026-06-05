@@ -125,5 +125,5 @@ export const aboutBio = [
 export const stats = [
   { value: "10+", label: "Years in Ops & Product" },
   { value: "50+", label: "Workflows & Systems Delivered" },
-  { value: "1", label: "Priority at a Time" },
+  { value: "Monthly", label: "Embedded Partnership" },
 ] as const;

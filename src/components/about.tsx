@@ -46,14 +46,26 @@ export function About() {
           </div>
 
           <div className="mt-10 grid grid-cols-3 divide-x divide-white/10 border-t border-white/10 pt-8 md:mt-12 md:pt-10">
-            {stats.map((stat) => (
+            {stats.map((stat) => {
+              const isWordStat = !/^\d+\+?$/.test(stat.value);
+
+              return (
               <div key={stat.label} className="px-4 text-center first:pl-0 last:pr-0 sm:px-6">
-                <p className="text-stat-value mb-1.5 md:mb-2">{stat.value}</p>
+                <p
+                  className={`mb-1.5 md:mb-2 ${
+                    isWordStat
+                      ? "text-xl font-light tracking-tight text-white md:text-2xl"
+                      : "text-stat-value"
+                  }`}
+                >
+                  {stat.value}
+                </p>
                 <p className="text-stat-label mx-auto max-w-[9rem]">
                   {stat.label}
                 </p>
               </div>
-            ))}
+            );
+            })}
           </div>
         </div>
       </div>
