@@ -1,4 +1,5 @@
-export const CALENDLY_URL = "https://calendly.com/amadeu/discovery-call";
+export const BOOKING_URL =
+  "https://calendar.app.google/ugo7FGnkNQQ1mSmP8";
 
 export const siteConfig = {
   name: "Amadeu Tolentino",

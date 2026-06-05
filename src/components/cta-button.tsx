@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "@/components/icons";
-import { CALENDLY_URL } from "@/lib/content";
+import { BOOKING_URL } from "@/lib/content";
 
 type CtaButtonProps = {
   children: React.ReactNode;
@@ -21,7 +21,7 @@ export function CtaButton({
 
   return (
     <a
-      href={CALENDLY_URL}
+      href={BOOKING_URL}
       onClick={onClick}
       className={`group inline-flex items-center gap-3 border border-bronze font-medium text-bronze tracking-[0.18em] uppercase transition-all duration-300 hover:bg-bronze hover:text-black focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bronze md:tracking-[0.2em] ${sizeClasses} ${className}`}
     >

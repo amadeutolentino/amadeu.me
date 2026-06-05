@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 import { ArrowUpRight } from "@/components/icons";
-import { CALENDLY_URL } from "@/lib/content";
+import { BOOKING_URL } from "@/lib/content";
 
 export function StickyCta() {
   const [visible, setVisible] = useState(false);
@@ -36,7 +36,7 @@ export function StickyCta() {
           30-min call · No pitch
         </p>
         <a
-          href={CALENDLY_URL}
+          href={BOOKING_URL}
           className="group inline-flex items-center gap-2 border border-bronze px-5 py-2.5 text-[10px] tracking-[0.2em] text-bronze uppercase transition-colors hover:bg-bronze hover:text-black focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bronze"
         >
           Book a Call
