@@ -117,8 +117,13 @@ export const engagements = [
   },
 ] as const;
 
+export const aboutBio = [
+  "I'm a product leader, designer, and builder — not just an advisor. I've spent years inside organizations modernizing how work gets done, not observing from the outside.",
+  "As a fractional partner, I work directly with your team. No account managers. No handoffs. Just one person embedded in your operations until the work is real.",
+] as const;
+
 export const stats = [
-  { value: "10+", label: "Years of Experience" },
-  { value: "50+", label: "Projects Delivered" },
-  { value: "100%", label: "Focus on Results" },
+  { value: "10+", label: "Years in Ops & Product" },
+  { value: "50+", label: "Workflows & Systems Delivered" },
+  { value: "1", label: "Priority at a Time" },
 ] as const;
