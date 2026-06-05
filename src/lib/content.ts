@@ -22,6 +22,14 @@ export const navLinks = [
   { label: "About", href: "#about" },
 ] as const;
 
+export const focusIntro = {
+  headline: "One priority area. One monthly partnership.",
+  paragraphs: [
+    "A Focus is how I work with your organization. Instead of scattered AI projects or strategy decks that sit on a shelf, we choose one operational area where AI and automation will actually move the bottom line — and we go deep.",
+    "I embed monthly as your fractional AI operations partner. You get dedicated attention on that single priority until it's working inside your business. Then we identify the next Focus together.",
+  ],
+} as const;
+
 export const focusSteps = [
   {
     step: "01",

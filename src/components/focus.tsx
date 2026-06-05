@@ -1,4 +1,4 @@
-import { focusSteps, whoThisIsFor } from "@/lib/content";
+import { focusIntro, focusSteps, whoThisIsFor } from "@/lib/content";
 
 export function Focus() {
   return (
@@ -8,16 +8,22 @@ export function Focus() {
       aria-labelledby="focus-heading"
     >
       <div className="mx-auto max-w-7xl px-5 md:px-10">
-        <p className="label-section mb-5 md:mb-6">How Focus Works</p>
-        <p className="text-body mb-10 max-w-2xl md:mb-16">
-          A Focus is a monthly partnership on one high-impact area — where AI
-          and automation improve how your business operates. One priority at a
-          time. No overwhelm.
-        </p>
+        <p className="label-section mb-5 md:mb-6">Focus</p>
 
-        <h2 id="focus-heading" className="sr-only">
-          How Focus Works
+        <h2
+          id="focus-heading"
+          className="text-display-light mb-6 max-w-2xl md:mb-8"
+        >
+          {focusIntro.headline}
         </h2>
+
+        <div className="text-body mb-12 max-w-2xl space-y-4 md:mb-16">
+          {focusIntro.paragraphs.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </div>
+
+        <p className="label-section mb-10 md:mb-16">How It Works</p>
 
         <div className="grid grid-cols-1 lg:grid-cols-4">
           {focusSteps.map((item, index) => {

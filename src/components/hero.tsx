@@ -61,7 +61,7 @@ export function Hero() {
             <p>
               I work as a fractional AI operations partner — embedding monthly
               to find your highest-impact opportunities and execute them one
-              Focus at a time.
+              priority area at a time.
             </p>
             <p>
               You don&apos;t need to be technical. I handle the complexity inside
@@ -74,7 +74,7 @@ export function Hero() {
               Book a Discovery Call
             </CtaButton>
             <p className="text-micro text-center sm:text-left">
-              30-minute call · Identify your first Focus
+              30-minute call · No pitch · Practical next steps
             </p>
 
             <div className="mt-1 flex items-center justify-center gap-3 sm:justify-start md:mt-2">
