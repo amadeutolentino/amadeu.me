@@ -17,6 +17,7 @@ export const viewport: Viewport = {
   themeColor: "#0a0a0a",
   width: "device-width",
   initialScale: 1,
+  colorScheme: "dark",
 };
 
 export const metadata: Metadata = {
@@ -26,6 +27,8 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  applicationName: siteConfig.name,
+  referrer: "origin-when-cross-origin",
   keywords: [
     "Amadeu Tolentino",
     "AI consulting",
@@ -35,10 +38,16 @@ export const metadata: Metadata = {
     "AI implementation",
     "business automation",
     "team training",
+    "AI adoption",
   ],
   authors: [{ name: siteConfig.name, url: siteConfig.url }],
   creator: siteConfig.name,
   publisher: siteConfig.name,
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   robots: {
     index: true,
     follow: true,
@@ -55,27 +64,39 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: siteConfig.title,
-    description: siteConfig.description,
+    title: siteConfig.ogTitle,
+    description: siteConfig.ogDescription,
+    countryName: "United States",
     images: [
       {
         url: siteConfig.ogImage,
         width: 1200,
-        height: 1600,
-        alt: `${siteConfig.name} — AI Consultant`,
+        height: 630,
+        alt: siteConfig.ogImageAlt,
+        type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: siteConfig.title,
-    description: siteConfig.description,
-    images: [siteConfig.ogImage],
+    title: siteConfig.ogTitle,
+    description: siteConfig.ogDescription,
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.ogImageAlt,
+      },
+    ],
   },
   alternates: {
     canonical: siteConfig.url,
   },
   category: "technology",
+  other: {
+    "og:see_also": siteConfig.url,
+  },
 };
 
 export default function RootLayout({

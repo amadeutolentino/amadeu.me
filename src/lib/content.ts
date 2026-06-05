@@ -6,8 +6,13 @@ export const siteConfig = {
   title: "Amadeu Tolentino | AI Consulting & Operational Strategy",
   description:
     "Amadeu Tolentino partners with organizations to identify AI opportunities, implement practical solutions, and help teams adopt AI across their operations.",
+  ogTitle: "Amadeu Tolentino | AI Consulting & Operational Strategy",
+  ogDescription:
+    "Identify AI opportunities, implement practical solutions, and help teams adopt AI across their operations.",
+  ogImageAlt:
+    "Amadeu Tolentino — AI consulting, workflow automation, and operational strategy",
   url: "https://amadeu.me",
-  ogImage: "/images/amadeu-headshot.png",
+  ogImage: "/opengraph-image",
 };
 
 export const navLinks = [
