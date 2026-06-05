@@ -59,9 +59,13 @@ export function Hero() {
               know where to start.
             </p>
             <p>
-              I partner with organizations to identify opportunities, implement
-              practical solutions, and help teams successfully adopt AI across
-              their operations.
+              I work as a fractional AI operations partner — embedding monthly
+              to find your highest-impact opportunities and execute them one
+              Focus at a time.
+            </p>
+            <p>
+              You don&apos;t need to be technical. I handle the complexity inside
+              your existing workflows.
             </p>
           </div>
 
@@ -70,7 +74,7 @@ export function Hero() {
               Book a Discovery Call
             </CtaButton>
             <p className="text-micro text-center sm:text-left">
-              30-minute call · No pitch · Practical next steps
+              30-minute call · Identify your first Focus
             </p>
 
             <div className="mt-1 flex items-center justify-center gap-3 sm:justify-start md:mt-2">

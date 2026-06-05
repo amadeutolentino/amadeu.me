@@ -21,10 +21,10 @@ export function Services() {
       aria-labelledby="services-heading"
     >
       <div className="mx-auto max-w-7xl px-5 md:px-10">
-        <p className="label-section mb-10 md:mb-16">How I Help</p>
+        <p className="label-section mb-10 md:mb-16">What a Focus Delivers</p>
 
         <h2 id="services-heading" className="sr-only">
-          How I Help
+          What a Focus Delivers
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-4">

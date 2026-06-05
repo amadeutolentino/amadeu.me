@@ -30,13 +30,13 @@ export function About() {
               </h2>
               <div className="text-body mx-auto max-w-xl space-y-4 lg:mx-0">
                 <p>
-                  I&apos;m a product leader, designer, and AI practitioner with
-                  a track record of helping organizations modernize operations
-                  and adopt technology that drives real results.
+                  I&apos;m a product leader, designer, and AI practitioner who
+                  works as a fractional operations partner — not a traditional
+                  consultant who hands off a deck and leaves.
                 </p>
                 <p>
-                  My work sits at the intersection of business operations,
-                  technology, workflow design, and implementation.
+                  I embed monthly, identify what moves the bottom line, and build
+                  inside your business one Focus at a time.
                 </p>
                 <p>
                   <a

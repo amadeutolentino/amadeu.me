@@ -1,6 +1,7 @@
 import { About } from "@/components/about";
 import { Engagements } from "@/components/engagements";
 import { FinalCta } from "@/components/final-cta";
+import { Focus } from "@/components/focus";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { SectionReveal } from "@/components/section-reveal";
@@ -13,6 +14,9 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <SectionReveal>
+          <Focus />
+        </SectionReveal>
         <SectionReveal>
           <Services />
         </SectionReveal>

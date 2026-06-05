@@ -33,7 +33,7 @@ export function StickyCta() {
     >
       <div className="flex items-center justify-between gap-4 px-5 py-3.5">
         <p className="text-[10px] font-medium leading-snug tracking-[0.12em] text-white/50 uppercase">
-          30-min call · No pitch
+          30-min call · Find your Focus
         </p>
         <a
           href={BOOKING_URL}

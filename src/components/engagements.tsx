@@ -9,10 +9,10 @@ export function Engagements() {
       aria-labelledby="work-heading"
     >
       <div className="mx-auto max-w-7xl px-5 md:px-10">
-        <p className="label-section mb-10 md:mb-16">Recent Engagements</p>
+        <p className="label-section mb-10 md:mb-16">Recent Focus Areas</p>
 
         <h2 id="work-heading" className="sr-only">
-          Recent Engagements
+          Recent Focus Areas
         </h2>
 
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-24">

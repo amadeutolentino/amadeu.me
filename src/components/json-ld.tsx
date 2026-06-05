@@ -6,7 +6,7 @@ export function JsonLd() {
     "@type": "Person",
     name: siteConfig.name,
     url: siteConfig.url,
-    jobTitle: "AI Consultant",
+    jobTitle: "Fractional AI Operations Partner",
     description: siteConfig.description,
     image: `${siteConfig.url}${siteConfig.ogImage}`,
     knowsAbout: [
@@ -34,7 +34,7 @@ export function JsonLd() {
   const professionalServiceData = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: `${siteConfig.name} — AI Consulting`,
+    name: `${siteConfig.name} — Fractional AI Operations`,
     url: siteConfig.url,
     description: siteConfig.description,
     image: `${siteConfig.url}${siteConfig.ogImage}`,

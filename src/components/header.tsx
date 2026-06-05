@@ -6,7 +6,7 @@ import { CtaButton } from "@/components/cta-button";
 import { useActiveSection } from "@/hooks/use-active-section";
 import { navLinks } from "@/lib/content";
 
-const SECTION_IDS = ["services", "work", "about", "contact"];
+const SECTION_IDS = ["focus", "work", "about", "contact"];
 
 function MenuIcon({ open }: { open: boolean }) {
   return (

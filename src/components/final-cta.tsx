@@ -30,9 +30,9 @@ export function FinalCta() {
               Let&apos;s build what&apos;s next.
             </h2>
             <p className="text-body max-w-lg">
-              Book a discovery call and let&apos;s explore how AI can help your
-              organization operate more efficiently and create capacity for
-              growth.
+              Book a discovery call and let&apos;s identify the first Focus area
+              where AI can help your organization operate more efficiently and
+              create capacity for growth.
             </p>
           </div>
 
@@ -44,7 +44,7 @@ export function FinalCta() {
               Book a Discovery Call
             </CtaButton>
             <p className="text-micro mt-3 text-center lg:text-left">
-              30-minute call · No pitch · Practical next steps
+              30-minute call · Identify your first Focus
             </p>
           </div>
         </div>
@@ -63,7 +63,7 @@ export function FinalCta() {
               LinkedIn
             </a>
             <p className="text-[10px] tracking-[0.15em] text-white/35 uppercase md:tracking-[0.2em]">
-              AI Consulting &amp; Operational Strategy
+              Fractional AI Operations
             </p>
           </div>
         </footer>
