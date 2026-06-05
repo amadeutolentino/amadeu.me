@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { stats } from "@/lib/content";
+import { siteConfig, stats } from "@/lib/content";
 
 export function About() {
   return (
@@ -37,6 +37,17 @@ export function About() {
                 <p>
                   My work sits at the intersection of business operations,
                   technology, workflow design, and implementation.
+                </p>
+                <p>
+                  <a
+                    href={siteConfig.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm tracking-[0.12em] text-bronze uppercase transition-colors hover:text-bronze-light focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bronze"
+                  >
+                    Connect on LinkedIn
+                    <span aria-hidden="true">↗</span>
+                  </a>
                 </p>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import { CtaButton } from "@/components/cta-button";
+import { siteConfig } from "@/lib/content";
 
 export function FinalCta() {
   return (
@@ -49,10 +50,18 @@ export function FinalCta() {
         </div>
 
         <footer className="mt-16 border-t border-white/10 pt-8 md:mt-24">
-          <div className="flex flex-col gap-3 text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
+          <div className="flex flex-col gap-4 text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
             <p className="text-[10px] tracking-[0.2em] text-white/35 uppercase md:tracking-[0.25em]">
               &copy; {new Date().getFullYear()} Amadeu Tolentino
             </p>
+            <a
+              href={siteConfig.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[10px] tracking-[0.15em] text-bronze uppercase transition-colors hover:text-bronze-light focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bronze md:tracking-[0.2em]"
+            >
+              LinkedIn
+            </a>
             <p className="text-[10px] tracking-[0.15em] text-white/35 uppercase md:tracking-[0.2em]">
               AI Consulting &amp; Operational Strategy
             </p>

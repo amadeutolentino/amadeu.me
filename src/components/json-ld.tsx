@@ -16,7 +16,7 @@ export function JsonLd() {
       "Product Design",
       "Team Training",
     ],
-    sameAs: [],
+    sameAs: [siteConfig.linkedin],
   };
 
   const websiteData = {

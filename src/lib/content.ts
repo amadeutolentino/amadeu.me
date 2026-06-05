@@ -13,6 +13,7 @@ export const siteConfig = {
     "Amadeu Tolentino — AI consulting, workflow automation, and operational strategy",
   url: "https://amadeu.me",
   ogImage: "/opengraph-image",
+  linkedin: "https://www.linkedin.com/in/amadeutolentino/",
 };
 
 export const navLinks = [
