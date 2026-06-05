@@ -25,42 +25,31 @@ export function Focus() {
 
         <p className="label-section mb-10 md:mb-16">How It Works</p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4">
-          {focusSteps.map((item, index) => {
-            const isFirst = index === 0;
-            const isLast = index === focusSteps.length - 1;
+        <div className="grid grid-cols-1 divide-y divide-white/10 lg:grid-cols-4 lg:items-start lg:divide-x lg:divide-y-0">
+          {focusSteps.map((item, index) => (
+            <article
+              key={item.step}
+              className={`flex flex-col gap-4 py-8 lg:py-0 ${
+                index === 0
+                  ? "lg:pr-8"
+                  : index === focusSteps.length - 1
+                    ? "lg:pl-8"
+                    : "lg:px-8"
+              }`}
+            >
+              <span className="text-sm font-medium text-bronze">
+                {item.step}
+              </span>
 
-            return (
-              <article
-                key={item.step}
-                className={[
-                  "grid grid-rows-[2rem_2.75rem_auto] gap-y-4 border-white/10 py-8",
-                  "border-t lg:border-t-0",
-                  !isFirst && "lg:border-l",
-                  isFirst && "border-t-0 pt-0",
-                  isLast && "pb-0",
-                  isFirst ? "lg:pr-8" : "lg:px-8",
-                  isLast && "lg:pr-0",
-                ]
-                  .filter(Boolean)
-                  .join(" ")}
-              >
-                <div className="flex h-8 items-center">
-                  <span className="text-sm font-medium tracking-[0.2em] text-bronze">
-                    {item.step}
-                  </span>
-                </div>
+              <h3 className="text-card-title min-h-[2.75rem] leading-snug lg:min-h-[3rem]">
+                {item.title}
+              </h3>
 
-                <h3 className="text-card-title flex items-start leading-snug">
-                  {item.title}
-                </h3>
-
-                <p className="text-body text-sm md:text-[0.9375rem]">
-                  {item.description}
-                </p>
-              </article>
-            );
-          })}
+              <p className="text-body text-sm md:text-[0.9375rem]">
+                {item.description}
+              </p>
+            </article>
+          ))}
         </div>
 
         <div className="mt-12 border-t border-white/10 pt-10 md:mt-16 md:pt-12">

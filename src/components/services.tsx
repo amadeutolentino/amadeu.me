@@ -27,32 +27,24 @@ export function Services() {
           What a Focus Delivers
         </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4">
+        <div className="grid grid-cols-1 divide-y divide-white/10 lg:grid-cols-4 lg:items-start lg:divide-x lg:divide-y-0">
           {services.map((service, index) => {
             const Icon = iconMap[service.icon];
-            const isFirst = index === 0;
-            const isLast = index === services.length - 1;
 
             return (
               <article
                 key={service.title}
-                className={[
-                  "grid grid-rows-[2rem_2.75rem_auto] gap-y-4 border-white/10 py-8",
-                  "border-t lg:border-t-0",
-                  !isFirst && "lg:border-l",
-                  isFirst && "border-t-0 pt-0",
-                  isLast && "pb-0",
-                  isFirst ? "lg:pr-8" : "lg:px-8",
-                  isLast && "lg:pr-0",
-                ]
-                  .filter(Boolean)
-                  .join(" ")}
+                className={`flex flex-col gap-4 py-8 lg:py-0 ${
+                  index === 0
+                    ? "lg:pr-8"
+                    : index === services.length - 1
+                      ? "lg:pl-8"
+                      : "lg:px-8"
+                }`}
               >
-                <div className="flex h-8 items-center">
-                  <Icon className="h-8 w-8 shrink-0 text-bronze" />
-                </div>
+                <Icon className="h-8 w-8 shrink-0 text-bronze" />
 
-                <h3 className="text-card-title flex items-start leading-snug">
+                <h3 className="text-card-title min-h-[2.75rem] leading-snug lg:min-h-[3rem]">
                   {service.title}
                 </h3>
 
