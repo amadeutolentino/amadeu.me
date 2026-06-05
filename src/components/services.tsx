@@ -27,18 +27,35 @@ export function Services() {
           How I Help
         </h2>
 
-        <div className="grid grid-cols-1 divide-y divide-white/10 lg:grid-cols-4 lg:divide-x lg:divide-y-0">
+        <div className="grid grid-cols-1 lg:grid-cols-4">
           {services.map((service, index) => {
             const Icon = iconMap[service.icon];
+            const isFirst = index === 0;
+            const isLast = index === services.length - 1;
+
             return (
               <article
                 key={service.title}
-                className={`flex flex-col py-8 lg:px-6 ${index === 0 ? "pt-0 lg:pt-0" : ""} ${index === services.length - 1 ? "pb-0 lg:pb-0" : ""} first:lg:pl-0 last:lg:pr-0`}
+                className={[
+                  "grid grid-rows-[2rem_2.75rem_auto] gap-y-4 border-white/10 py-8",
+                  "border-t lg:border-t-0",
+                  !isFirst && "lg:border-l",
+                  isFirst && "border-t-0 pt-0",
+                  isLast && "pb-0",
+                  isFirst ? "lg:pr-8" : "lg:px-8",
+                  isLast && "lg:pr-0",
+                ]
+                  .filter(Boolean)
+                  .join(" ")}
               >
-                <Icon className="mb-5 h-7 w-7 shrink-0 text-bronze md:mb-6 md:h-8 md:w-8" />
-                <h3 className="text-card-title mb-3 min-h-[2.75rem] md:mb-4 lg:min-h-[2.25rem] lg:whitespace-nowrap">
+                <div className="flex h-8 items-center">
+                  <Icon className="h-8 w-8 shrink-0 text-bronze" />
+                </div>
+
+                <h3 className="text-card-title flex items-start leading-snug">
                   {service.title}
                 </h3>
+
                 <p className="text-body text-sm md:text-[0.9375rem]">
                   {service.description}
                 </p>
