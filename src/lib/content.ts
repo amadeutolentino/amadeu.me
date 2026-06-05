@@ -1,6 +1,35 @@
 export const BOOKING_URL =
   "https://calendar.app.google/ugo7FGnkNQQ1mSmP8";
 
+export const discoveryCallNote =
+  "30 minutes · Map your operations · Identify a potential first Focus · No obligation";
+
+export const discoveryCallNoteShort =
+  "30 min · Map your ops · No obligation";
+
+export const faqs = [
+  {
+    question: "What happens on the discovery call?",
+    answer:
+      "We walk through how your operations run today, where time and money are being lost, and whether a Focus makes sense. You'll leave with clarity on a potential first priority.",
+  },
+  {
+    question: "How long does a Focus typically last?",
+    answer:
+      "Most Focus areas run as a monthly partnership until the work is embedded in your business. We define scope together before starting so you know what you're committing to.",
+  },
+  {
+    question: "Do you work with our existing tools?",
+    answer:
+      "Yes. I build inside the systems you already use — CRMs, intake tools, communication platforms, spreadsheets, whatever your team relies on daily.",
+  },
+  {
+    question: "What if we're not technical?",
+    answer:
+      "That's expected. You don't need to understand AI or automation. I handle the complexity and make sure your team can use what we build.",
+  },
+] as const;
+
 export const siteConfig = {
   name: "Amadeu Tolentino",
   title: "Amadeu Tolentino | Fractional AI Operations",

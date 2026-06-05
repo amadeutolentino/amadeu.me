@@ -1,5 +1,5 @@
 import { CtaButton } from "@/components/cta-button";
-import { siteConfig } from "@/lib/content";
+import { discoveryCallNote, siteConfig } from "@/lib/content";
 
 export function FinalCta() {
   return (
@@ -44,7 +44,7 @@ export function FinalCta() {
               Book a Discovery Call
             </CtaButton>
             <p className="text-micro mt-3 text-center lg:text-left">
-              30-minute call · Identify your first Focus
+              {discoveryCallNote}
             </p>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { CtaButton } from "@/components/cta-button";
+import { discoveryCallNote } from "@/lib/content";
 
 export function Hero() {
   return (
@@ -74,7 +75,7 @@ export function Hero() {
               Book a Discovery Call
             </CtaButton>
             <p className="text-micro text-center sm:text-left">
-              30-minute call · No pitch · Practical next steps
+              {discoveryCallNote}
             </p>
 
             <div className="mt-1 flex items-center justify-center gap-3 sm:justify-start md:mt-2">

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 import { ArrowUpRight } from "@/components/icons";
-import { BOOKING_URL } from "@/lib/content";
+import { BOOKING_URL, discoveryCallNoteShort } from "@/lib/content";
 
 export function StickyCta() {
   const [visible, setVisible] = useState(false);
@@ -33,7 +33,7 @@ export function StickyCta() {
     >
       <div className="flex items-center justify-between gap-4 px-5 py-3.5">
         <p className="text-[10px] font-medium leading-snug tracking-[0.12em] text-white/50 uppercase">
-          30-min call · Find your Focus
+          {discoveryCallNoteShort}
         </p>
         <a
           href={BOOKING_URL}
