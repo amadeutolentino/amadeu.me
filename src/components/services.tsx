@@ -33,10 +33,12 @@ export function Services() {
             return (
               <article
                 key={service.title}
-                className={`py-8 lg:px-8 ${index === 0 ? "pt-0 lg:pt-0" : ""} ${index === services.length - 1 ? "pb-0 lg:pb-0" : ""} first:lg:pl-0 last:lg:pr-0`}
+                className={`flex flex-col py-8 lg:px-6 ${index === 0 ? "pt-0 lg:pt-0" : ""} ${index === services.length - 1 ? "pb-0 lg:pb-0" : ""} first:lg:pl-0 last:lg:pr-0`}
               >
-                <Icon className="mb-5 h-7 w-7 text-bronze md:mb-6 md:h-8 md:w-8" />
-                <h3 className="text-card-title mb-3 md:mb-4">{service.title}</h3>
+                <Icon className="mb-5 h-7 w-7 shrink-0 text-bronze md:mb-6 md:h-8 md:w-8" />
+                <h3 className="text-card-title mb-3 min-h-[2.75rem] md:mb-4 lg:min-h-[2.25rem] lg:whitespace-nowrap">
+                  {service.title}
+                </h3>
                 <p className="text-body text-sm md:text-[0.9375rem]">
                   {service.description}
                 </p>
